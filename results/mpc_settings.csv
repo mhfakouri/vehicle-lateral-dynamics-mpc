@@ -1,0 +1,2 @@
+SampleTime_s,PredictionHorizon,SteeringLimit_deg,Q_eY,Q_ePsi,Q_Vy,Q_YawRate,R_Steering,S_SteeringMove
+0.1,20,8,80,30,0.5,2,2,20

@@ -1,0 +1,16 @@
+# MATLAB generated files
+*.asv
+*.autosave
+*.m~
+*.slxc
+slprj/
+codegen/
+
+# Generated binary results
+results/*.mat
+results/figures/*.fig
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/

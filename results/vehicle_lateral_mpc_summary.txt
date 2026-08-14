@@ -1,0 +1,52 @@
+Vehicle Lateral Dynamics with Model Predictive Control
+Generated: 2026-08-14 19:57:42
+
+SOURCE-DERIVED ITEMS
+Nonlinear states: [Vx Vy r wf wr]
+Archived MPC sample time: 0.1000 s
+Archived MPC prediction horizon: 20
+Archived model stop time: 7.0000 s
+
+MISSING LEGACY DEPENDENCY
+The archived Simulink MPC block references mpcobj / MPCtask.mat.
+That controller object and its exact weights/constraints were unavailable.
+
+CLEAN RECONSTRUCTION
+MPC state: [e_y e_psi Vy r]
+Manipulated variable: steering angle delta
+Steering limit: +/-8.0000 deg [new documented choice]
+Q diag: [80.0000 30.0000 0.5000 2.0000] [new]
+R = 2.0000 [new]
+S = 20.0000 [new]
+
+MODEL CHECKS
+Operating speed: 13.8888888889 m/s
+Equilibrium residual norm: 0.000000000000e+00
+Lateral controllability rank: 2 / 2
+Lateral pole 1: -6.1754625000 +1.7547317205i
+Lateral pole 2: -6.1754625000 -1.7547317205i
+
+TRACKING RESULTS
+Lateral path-error RMSE: 0.0230022460 m
+Maximum lateral path error: 0.0653854938 m
+Heading-error RMSE: 0.0094893916 rad
+Maximum heading error: 0.0234605760 rad
+Yaw-rate vs V0*kappa RMSE: 0.0634346408 rad/s
+Maximum abs steering: 3.7250334369 deg
+Steering saturation fraction: 0.0000000000
+Max raw front slip angle: 2.5203583214 deg
+Max raw rear slip angle: 1.8327413063 deg
+Max raw longitudinal slip: 0.0004359780
+Maximum longitudinal speed reduction: 0.0909655292 m/s
+
+OPTIMIZER
+QP Hessian condition estimate: 1.075412099605e+04
+Constrained-fallback fraction: 0.0000000000
+Mean fallback iterations: 0.0000
+Maximum fallback iterations: 0
+Maximum QP residual: 1.273292582482e-11
+
+INTERPRETATION NOTE
+This is a cleaned reconstruction around the archived nonlinear vehicle model. The exact original MPCtask.mat tuning could not be recovered and is not claimed here.
+The reference path, MPC weights, steering constraint, and self-contained QP implementation are newly documented choices for reproducible validation.
+This is a simulation study, not experimental vehicle validation.
